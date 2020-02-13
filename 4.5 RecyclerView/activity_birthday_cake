@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BirthdayCakeActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="422dp"
+        android:layout_height="401dp"
+        android:layout_marginTop="8dp"
+        android:text="Preheat oven to 350F (175C) and grease and flour the sides and bottom of three 8” or 9” baking pans. For extra security I also recommend lining the bottom of each pan with a round of parchment paper cut to fit the bottom of the pan.
+Add butter to the bowl of a stand mixer or to a large bowl. Use a paddle attachment on your stand mixer or an electric mixer to beat until smooth.
+Add sugar and beat until well-combined.
+Add eggs, one at a time, beating well after each addition.
+Stir in vanilla extract.
+In a separate bowl, whisk together flour, baking soda, baking powder, and salt.
+Using a spoon or spatula (but NOT the electric mixer any longer) add about a fourth of the flour mixture (no need to measure, just eyeball it) to the butter mixture and stir until just combined.
+Now add approximately ⅓ of the buttermilk and stir again until combined. Repeat alternating adding flour mixture and buttermilk until all ingredients are completely combined. Be sure to scrape the sides and bottom of the bowl.
+Stir in sprinkles.
+Evenly divide batter into prepared pan. Transfer to 350F (175C) oven and bake for about 28 minutes if using 9” pans and 32-34 minutes if using 8” pans, or until a toothpick inserted in the center of cake comes out clean or with a few moist crumbs.
+Allow to cool in pan for 10 minutes then run a knife around the edge of the pan and carefully invert each layer onto a cooling rack to cool completely before frosting. While cakes are cooling, prepare frosting.
+CHOCOLATE CREAM CHEESE FROSTING"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="406dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="Instructions"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="406dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="INGREDIENTS"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="406dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="8dp"
+        android:text='1 cup + 2 Tablespoons unsalted butter softened (265g)
+3 cups granulated sugar 600g
+3 large eggs room temperature preferred
+1 Tablespoon vanilla extract
+4 cups all-purpose or cake flour 500g
+1 1/2 teaspoons baking soda
+1 1/2 teaspoons baking powder
+1 1/2 teaspoons salt
+2 cups buttermilk¹ room temperature preferred (475ml)
+1/2 cup colorful sprinkles²
+CHOCOLATE CREAM CHEESE FROSTING³
+3/4 cup unsalted butter softened (175g)
+12 oz cream cheese softened (340g)
+1 1/2 teaspoons vanilla extract
+1/4 teaspoon salt
+5 1/4 cups powdered sugar 656g
+3/4 cup natural cocoa powder 90g'
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
