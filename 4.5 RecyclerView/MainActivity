@@ -1,0 +1,56 @@
+package com.example.fundamentalsunit2_45;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Bundle;
+import android.widget.SimpleAdapter;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+
+    private ArrayList<String> mRecipeNames = new ArrayList<>();
+    private ArrayList<String> mRecipeDescriptions = new ArrayList<>();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+
+    }
+
+    private void initRecipes()
+    {
+        mRecipeNames.add("Pretzel");
+        mRecipeDescriptions.add("Make pretzels with a twist");
+
+        mRecipeNames.add("Birthday Cake");
+        mRecipeDescriptions.add("Who doesn't love birthdays");
+
+        mRecipeNames.add("Pizza");
+        mRecipeDescriptions.add("The best pie.");
+
+        mRecipeNames.add("Brownies");
+        mRecipeDescriptions.add("Choclate fun");
+
+        mRecipeNames.add("Icecream");
+        mRecipeDescriptions.add("Treats for cold days");
+
+        mRecipeNames.add("Lemonade");
+        mRecipeDescriptions.add("WHat do you do when life gives you lemons?");
+
+        initRecyclerView();
+    }
+
+    private void initRecyclerView()
+    {
+        RecyclerView recyclerView = findViewById(R.id.recipeList);
+        RecipeAdapter adapter = new  RecipeAdapter(this, mRecipeNames, mRecipeDescriptions);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
+}
