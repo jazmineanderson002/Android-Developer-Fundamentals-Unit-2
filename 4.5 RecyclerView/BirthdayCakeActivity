@@ -1,0 +1,14 @@
+package com.example.fundamentalsunit2_45;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class BirthdayCakeActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_birthday_cake);
+    }
+}
